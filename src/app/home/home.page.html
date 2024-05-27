@@ -1,20 +1,58 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      <strong>SkeletonAPP</strong>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">SkeletonAPP</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <h1><Strong> Bienvenido! </Strong></h1>
+    <p> Usuario **agregar nombre usuario** </p>
+    <h3>Información Adicional</h3>
+
+    <ion-item>
+      <ion-input label="Nombre" placeholder="Ingrese nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Apellido" placeholder="Ingrese apellido"></ion-input>
+    </ion-item>
+
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Seleccione Nivel">
+          <div slot="label">Nivel Educación</div>
+          <ion-select-option value="N/A">N/A</ion-select-option>
+          <ion-select-option value="Básico">Básico</ion-select-option>
+          <ion-select-option value="Medio">Medio</ion-select-option>
+          <ion-select-option value="Superior">Superior</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-item>
+      <ion-label>Fecha de Nacimiento</ion-label>
+      <ion-input type="date"></ion-input>
+    </ion-item>
+
+    <ion-button fill="Limpiar">Limpiar</ion-button>
+    <ion-button fill="Mostrar">Mostrar</ion-button>
+    
   </div>
 </ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>App desarrollada por VMS</ion-title>
+  </ion-toolbar>
+</ion-footer>
